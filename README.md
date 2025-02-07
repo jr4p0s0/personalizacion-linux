@@ -1,11 +1,12 @@
-# Curso de personalizacion de linux (hack4u.io)
+# Linux Customization Course (hack4u.io)
 
-Este repositorio contiene los ficheros de configuracion de los paquetes que se han utilizado en el curso de personalizacion de linux de [hack4u.io](https://hack4u.io/) de la mano de s4vitar.
+*Read this in other languages: [Español](README_es.md)*
 
-## Contenido del repositorio
+This repository contains the configuration files for the packages used in the Linux customization course from [hack4u.io](https://hack4u.io/) taught by s4vitar.
 
-Ficheros de configuracion de los siguientes paquetes:
+## Repository Contents
 
+Configuration files for the following packages:
 - [ ] [**bspwm**](#bspwm)
 - [ ] [**rofi**](#rofi)
 - [ ] [**sxhkd**](#sxhkd)
@@ -14,52 +15,42 @@ Ficheros de configuracion de los siguientes paquetes:
 - [ ] [**picom**](#picom)
 
 ### BSPWM
+- [**bspwmrc**](./bspwm/bspwmrc): BSPWM configuration file.
+- [**scripts**](./bspwm/scripts/): Directory containing utility scripts for BSPWM.
 
-- [**bspwmrc**](./bspwm/bspwmrc): Fichero de configuracion de bspwm.
-- [**scripts**](./bspwm/scripts/): Directorio con scripts de utilidad para bspwm.
-
-BSPWM es un gestor de ventanas que se controla mediante eventos y que se configura mediante scripts. En este repositorio se incluyen los ficheros de configuracion de bspwm y algunos scripts de utilidad.
-
-En este caso, como el curso está orientado a la realizacion de un entorno de trabajo para pentesting, existen varios scripts que, junto a picom, permiten visualizar ciertas cosas como IP actual, IP de HTB, etc.
+BSPWM is an event-driven window manager that is configured through scripts. This repository includes BSPWM configuration files and several utility scripts. Since this course is oriented towards creating a pentesting work environment, there are various scripts that, together with picom, allow you to visualize certain information such as current IP, HTB IP, etc.
 
 ### Rofi
+- [**config.rasi**](./rofi/config.rasi): Rofi configuration file.
+- [**themes**](./rofi/themes/): Directory containing Rofi themes.
 
-- [**config.rasi**](./rofi/config.rasi): Fichero de configuracion de rofi.
-- [**themes**](./rofi/themes/): Directorio con temas para rofi.
-
-Rofi es un lanzador de aplicaciones y ventana de cambio de ventanas. En este repositorio se incluyen los ficheros de configuracion de rofi y algunos temas.
+Rofi is an application launcher and window switcher. This repository includes Rofi configuration files and several themes.
 
 ### SXHKD
+- [**sxhkdrc**](./sxhkd/sxhkdrc): SXHKD configuration file.
 
-- [**sxhkdrc**](./sxhkd/sxhkdrc): Fichero de configuracion de sxhkd.
-
-SXHKD es un demonio que se encarga de gestionar los atajos de teclado. En este repositorio se incluye el fichero de configuracion de sxhkd.
+SXHKD is a daemon that handles keyboard shortcuts. This repository includes the SXHKD configuration file.
 
 ### Polybar
+- [**config**](./polybar/config): Polybar configuration file.
+- [**scripts**](./polybar/scripts/): Directory containing utility scripts for Polybar.
+- [**colors.ini**](./polybar/colors.ini): File containing colors used in Polybar.
+- [**fonts**](./polybar/fonts/): Directory containing fonts used in Polybar.
+- [**current.ini**](./polybar/current.ini): Current bars configuration file.
+- [**launch.sh**](./polybar/launch.sh): Script to launch Polybar.
+- [**workspace.ini**](./polybar/workspace.ini): Workspaces configuration file.
 
-- [**config**](./polybar/config): Fichero de configuracion de polybar.
-- [**scripts**](./polybar/scripts/): Directorio con scripts de utilidad para polybar.
-- [**colors.ini**](./polybar/colors.ini): Fichero con los colores utilizados en polybar.
-- [**fonts**](./polybar/fonts/): Directorio con las fuentes utilizadas en polybar.
-- [**current.ini**](./polybar/current.ini): Fichero con la configuracion de las barras actuales.
-- [**launch.sh**](./polybar/launch.sh): Script para lanzar polybar.
-- [**workspace.ini**](./polybar/workspace.ini): Fichero con la configuracion de las workspaces.
-
-Polybar es una barra de estado que se puede personalizar mediante ficheros de configuracion. En este repositorio se incluyen los ficheros de configuracion de polybar y algunos scripts de utilidad.
-
-Polybar permite mostrar informacion en la barra de estado, como la fecha y hora, el uso de CPU y memoria, el estado de la bateria, etc. En este caso solo se ha desplegado la barra de los workspaces, algunos scripts, la barra de la fecha y hora y una barra pequeña para poder apagar el sistema.
+Polybar is a status bar that can be customized through configuration files. This repository includes Polybar configuration files and utility scripts. For this setup, only the workspaces bar, some scripts, the date and time bar, and a small bar for system shutdown have been deployed.
 
 ### Kitty
+- [**kitty.conf**](./kitty/kitty.conf): Kitty configuration file.
+- [**color.ini**](./kitty/color.ini): File containing colors used in Kitty.
 
-- [**kitty.conf**](./kitty/kitty.conf): Fichero de configuracion de kitty.
-- [**color.ini**](./kitty/color.ini): Fichero con los colores utilizados en kitty.
-
-Kitty es un emulador de terminal que se puede personalizar mediante ficheros de configuracion. En este repositorio se incluyen los ficheros de configuracion de kitty.
+Kitty is a terminal emulator that can be customized through configuration files. This repository includes Kitty configuration files.
 
 ### Picom
+- [**picom.conf**](./picom/picom.conf): Picom configuration file.
 
-- [**picom.conf**](./picom/picom.conf): Fichero de configuracion de picom.
+Picom is a compositor that can be customized through configuration files. In this case, it has been configured to add shadows and rounded corners to windows.
 
-Picom es un compositor que se puede personalizar mediante ficheros de configuracion. En este repositorio se incluye el fichero de configuracion de picom.
-
-Picom permite añadir efectos de transparencia, sombras, etc. En este caso se ha configurado para añadir sombras y redondez a las ventanas.
+---
